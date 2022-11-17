@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="calculator">
+        <div id="screenContainer">
+            <input type="text" id='screen' disabled='true'>
+        </div>
+
+        <div id="buttonContainer">
+            <button id='um' onclick='addToScreen("1")'>1</button>
+            <button id='dois' onclick='addToScreen("2")'>2</button>
+            <button id='tres' onclick='addToScreen("3")'>3</button>
+            <button id='quatro' onclick='addToScreen("4")'>4</button>
+            <button id='cinco' onclick='addToScreen("5")'>5</button>
+            <button id='seis' onclick='addToScreen("6")'>6</button>         
+            <button id='sete' onclick='addToScreen("7")'>7</button>
+            <button id='oito' onclick='addToScreen("8")'>8</button>
+            <button id='novo' onclick='addToScreen("9")'>9</button> 
+            <button id='zero' onclick='addToScreen("0")'>0</button>
+            <button id='mais' onclick='addToScreen("+")'>+</button>
+            <button id='igual' onclick='result()'>=</button>
+            <button id='ponto' onclick='addToScreen(".")'>.</button>
+            <button id='menos' onclick='addToScreen("-")'>-</button>
+            <button id='multiplicar' onclick='addToScreen("*")'>X</button>
+            <button id="limpar">C</button>
+            <button id='dividir' onclick='addToScreen("/")'>/</button>
+            <button id='apagar'>&larr; </button>
+        </div>
+
+    </div>
+
+</body>
+
+    <script src="script.js"></script>
+
+</html>
